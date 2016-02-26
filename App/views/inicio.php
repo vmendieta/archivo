@@ -2,10 +2,6 @@
 include ('header.php');
 
 include ('nav.php');
-/*if (!isset($_SESSION['username'])) {
-	echo "<script>window.top.location = 'index';</script>";
-	exit;
-}*/
 $contenido=<<<FIN
 <article>
 	<section>

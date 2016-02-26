@@ -3,7 +3,7 @@ namespace App\Models;
 defined("APPPATH") OR die("Access denied");
 
 use \Core\Database;
-use \App\Interfaces\Crud;
+use \App\interfaces\Crud;
 
 class Solicitud implements Crud
 

@@ -1,10 +1,3 @@
-<?php 
-
-/*if (isset($_SESSION['username'])) {
-	echo "<script>window.top.location = 'home';</script>";
-	exit;
-}*/
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,10 +10,10 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="http://localhost/archivo/app/views/assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://localhost/archivo/app/views/assets/font-awesome/css/font-awesome.min.css">
-         <link rel="stylesheet" href="http://localhost/archivo/app/views/assets/css/style.css">
-		<link rel="stylesheet" href="http://localhost/archivo/app/views/assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+         <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
        
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,7 +24,7 @@
         <![endif]-->
 
         <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="http://localhost/archivo/app/views/assets/ico/favicon.png">
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
        
 
     </head>
@@ -56,7 +49,7 @@
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form role="form" action="home/index" method="post" class="login-form" id="login-form">
+			                    <form role="form" action="Home" method="post" class="login-form" id="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Usuario</label>
 			                        	<input id="username" type="text" name="username" placeholder="Usuario..." class="form-username form-control" id="form-username">
@@ -93,13 +86,13 @@
 
 
         <!-- Javascript -->
-        <script src="http://localhost/archivo/app/views/assets/js/jquery-1.11.1.min.js"></script>
-        <script src="http://localhost/archivo/app/views/assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="http://localhost/archivo/app/views/assets/js/jquery.backstretch.min.js"></script>
-        <script src="http://localhost/archivo/app/views/assets/js/scripts.js"></script>
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
         
         <!--[if lt IE 10]>
-            <script src="http://localhost/archivo/app/views/assets/js/placeholder.js"></script>
+            <script src=assets/js/placeholder.js"></script>
         <![endif]-->
 
     </body>

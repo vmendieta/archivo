@@ -8,10 +8,10 @@
 
     </footer>
 <a href="#wrapper" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
-<script type="text/javascript" src="http://localhost/archivo/app/views/modules/datetimepicker/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
-<script type="text/javascript" src="http://localhost/archivo/app/views/modules/datetimepicker/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="http://localhost/archivo/app/views/modules/datetimepicker/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-<script type="text/javascript" src="http://localhost/archivo/app/views/modules/datetimepicker/js/locales/bootstrap-datetimepicker.es.js" charset="UTF-8"></script>
+<script type="text/javascript" src="modules/datetimepicker/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="modules/datetimepicker/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="modules/datetimepicker/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="modules/datetimepicker/js/locales/bootstrap-datetimepicker.es.js" charset="UTF-8"></script>
 
 <script>
     $(document).ready(function() {
@@ -332,22 +332,22 @@
 
     <!-- jQuery -->
 
-<script src="http://localhost/archivo/app/views/modules/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="modules/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
 
-<script src="http://localhost/archivo/app/views/modules/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="modules/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="http://localhost/archivo/app/views/modules/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <script src="modules/bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="http://localhost/archivo/app/views/modules/dist/js/sb-admin-2.js"></script>
+    <script src="modules/dist/js/sb-admin-2.js"></script>
 	
 	<!-- DataTables JavaScript -->
-   <script src="http://localhost/archivo/app/views/modules/js/validator.min.js"></script>
+   <script src="modules/js/validator.min.js"></script>
      <script src="http://platform.twitter.com/widgets.js"></script>
-     <script src="http://localhost/archivo/app/views/modules/js/application.js"></script>
-    <script src="http://localhost/archivo/app/views/modules/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="http://localhost/archivo/app/views/modules/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+     <script src="modules/js/application.js"></script>
+    <script src="modules/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="modules/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
 
  
 </body>

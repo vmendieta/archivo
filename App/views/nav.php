@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                  <a class="navbar-brand" href="index.html"><img src="http://localhost/archivo/app/views/assets/img/logo.jpg" alt="Archivo Nacional" longdesc="Archivo Nacional" class="img-responsive visible-sm visible-md visible-lg"/><br>&nbsp;&nbsp;&nbsp;Archivo Nacional</a>
+                  <a class="navbar-brand" href="index"><img src="assets/img/logo.jpg" alt="Archivo Nacional" longdesc="Archivo Nacional" class="img-responsive visible-sm visible-md visible-lg"/><br>&nbsp;&nbsp;&nbsp;Archivo Nacional</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -26,7 +26,7 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i>Configuraciones</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="home/logout"><i class="fa fa-sign-out fa-fw"></i>Salir</a>
+                        <li><a href="logout"><i class="fa fa-sign-out fa-fw"></i>Salir</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->

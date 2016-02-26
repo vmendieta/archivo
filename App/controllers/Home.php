@@ -3,11 +3,11 @@ namespace App\Controllers;
 defined("APPPATH") OR die("Access denied");
 
 use \Core\View,
-    \App\Models\User as Users,
-    \App\Models\Solicitud as Solicitud,
-    \App\Models\Documentos as Documentos,
-    \App\Models\Investigadores as Investigadores,
-    \App\Models\InformesConsultas as Informes,
+    \App\models\User as Users,
+    \App\models\Solicitud as Solicitud,
+    \App\models\Documentos as Documentos,
+    \App\models\Investigadores as Investigadores,
+    \App\models\InformesConsultas as Informes,
     \Core\Controller,
     \Core\Url as Url;
 
@@ -16,24 +16,26 @@ class Home extends Controller
 
     public function index()
     {
-    	
-    	if (!isset($_SESSION['username'])) {
     		
+    	if (!isset($_SESSION['username'])) {
+    	
+		
     		if (isset($_POST["username"])){
     		
 				$username=$_POST["username"];
-					$password=$_POST["password"];
+			        $password=$_POST["password"];
 			
 				$users="";
 				$users = Users::getExistUser($username,$password);
 				//echo $users;exit;
 				if($users){			
-				
+				          //echo "ff";exit;
 					View::set("users", $users["usuario"]);
 					View::set("title", "Inicie Sesion");
 					View::render("inicio");
 				
 				}else{
+
 					//echo "No esta logueado";
 					//echo "index loguearse1";exit;
 					//View::set("title", "Loguearse");
@@ -49,6 +51,7 @@ class Home extends Controller
     	 		
     	 	}
     	}else{
+			
 				
 			View::set("title", "Loguearse");
 			View::render("inicio");//Index de iniciar sesion
@@ -63,8 +66,12 @@ class Home extends Controller
     	
     	session_unset();
     	session_destroy();
-    	
-    	Url::redirect('archivo/public/home');
+    	//echo "index loguearse11";exit;
+
+    	//Url::redirect('archivo/public/home');
+	View::set("title", "Loguearse");
+				View::render("index");//Index de iniciar sesion
+
     	
     
     		

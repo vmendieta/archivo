@@ -28,13 +28,13 @@ class App
     /**
     * @var
     */
-    const NAMESPACE_CONTROLLERS = "\App\Controllers\\";
+    const NAMESPACE_CONTROLLERS = "\App\controllers\\";
 
     /**
      * @var
      */
     const CONTROLLERS_PATH = "../App/controllers/";
-    const CONTROLLERS_PATH_HOME = "../App/controllers/home";
+    const CONTROLLERS_PATH_HOME = "../App/controllers/Home";
     
 
     /**
@@ -44,12 +44,14 @@ class App
     {
         //obtenemos la url parseada
         $url = $this->parseUrl();
-      // print_r($url) ; //exit;
+    // print_r($url) ; //exit;
         //comprobamos que exista el archivo en el directorio controllers
         if(file_exists(self::CONTROLLERS_PATH.ucfirst($url[0]) . ".php"))
         {
             //nombre del archivo a llamar
+		//echo $ur=ucfirst($url[0]);
             $this->_controller = ucfirst($url[0]);
+		//echo $f=$this->_controller;
             //eliminamos el controlador de url, así sólo nos quedaran los parámetros del método
             unset($url[0]);
         }
@@ -57,7 +59,7 @@ class App
         { 
         	if ((sizeof($url)==1)) {
         		
-        		$this->_controller = "home";
+        		$this->_controller = "Home";
         		$url[1]=$url[0];        		
         	} else{
         		
@@ -75,10 +77,10 @@ class App
 
         //obtenemos la clase con su espacio de nombres
         $fullClass = self::NAMESPACE_CONTROLLERS.$this->_controller;
-       // print_r($fullClass);print_r($url);exit;
+       //print_r($fullClass);print_r($url);exit;
         //asociamos la instancia a $this->_controller
-        $this->_controller = new $fullClass;
-
+       $this->_controller = new $fullClass;
+     
         //si existe el segundo segmento comprobamos que el método exista en esa clase
         if(isset($url[1]))
         {
@@ -92,7 +94,7 @@ class App
             }
             else
             { 
-            /*if(($url[0]=$url[1])&&($url[1]="home")){
+            /*if(($url[0]=$url[1])&&($url[1]="Home")){
             	//echo "hola";exit;
             	$url[1]=$url[2];
             	$this->_method = $url[1];
@@ -119,7 +121,9 @@ class App
      */
     public function parseUrl()
     {
-        if(isset($_GET["url"]))
+    	
+    	 
+    	if(isset($_GET["url"]))
         {
             return explode("/", filter_var(rtrim($_GET["url"], "/"), FILTER_SANITIZE_URL));
         }

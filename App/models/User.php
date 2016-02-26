@@ -3,23 +3,13 @@ namespace App\Models;
 defined("APPPATH") OR die("Access denied");
 
 use \Core\Database;
-use \App\Interfaces\Crud;
+use \App\interfaces\Crud;
 
 class User implements Crud
 {
     public static function getAll()
     {
-       /* try {
-			$connection = Database::instance();
-			$sql = "SELECT * from usuarios";
-			$query = $connection->prepare($sql);
-			$query->execute();
-			return $query->fetchAll();
-		}
-        catch(\PDOException $e)
-        {
-			print "Error!: " . $e->getMessage();
-		}*/
+       
 		require_once '../../servicios/librerias/librerias.php';
 		$ch = curl_init();  
 		curl_setopt($ch, CURLOPT_URL, "http://localhost/servicios/usuarios");  
