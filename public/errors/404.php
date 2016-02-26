@@ -5,6 +5,6 @@
         <title>NOT FOUND</title>
     </head>
     <body>
-        404 Pagina no Encontrada1
+        404 Pagina no Encontrada
     </body>
 </html>

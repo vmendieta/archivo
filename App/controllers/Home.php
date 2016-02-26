@@ -38,9 +38,10 @@ class Home extends Controller
 
 					//echo "No esta logueado";
 					//echo "index loguearse1";exit;
-					//View::set("title", "Loguearse");
-					//View::render("index");//Index de iniciar sesion
-					Url::redirect('archivo/public/home');
+					View::set("title", "Loguearse");
+					View::render("index");//Index de iniciar sesion
+					//Url::redirect('archivo/public/home');
+					
 				}
 				
 			}

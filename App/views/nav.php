@@ -35,7 +35,7 @@
             </ul>
             <!-- /.navbar-top-links -->
 
-            <div class="navbar-default sidebar" role="navigation">
+                       <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         
@@ -43,23 +43,23 @@
                             <a href="index"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-book fa-fw"></i> Movimiento de Documentos<span class="fa arrow"></span></a>
+                            <a href="#" id="m_movimiento"><i class="fa fa-book fa-fw"></i> Movimiento de Documentos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="ingreso"><i class="fa fa-archive fa-fw"></i> Ingreso de Documentos</a>
+                                    <a href="ingreso" id="m_ingreso"><i class="fa fa-archive fa-fw"></i> Ingreso de Documentos</a>
                                 </li>
                                 <li>
-                                    <a href="salida"><i class="fa fa-arrow-circle-left fa-fw"></i> Salida de Documentos</a>
+                                    <a href="salida" id="m_salida"><i class="fa fa-arrow-circle-left fa-fw"></i> Salida de Documentos</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="informeconsultas"><i class="fa fa-table fa-fw"></i> Informes</a>
+                            <a href="informeconsultas" id="m_informeconsultas"><i class="fa fa-table fa-fw"></i> Informes</a>
                             
                         </li>
                        <li>
-                       		<a href="logout"><i class="fa fa-sign-out fa-fw"></i>Salir</a>
+                       		<a href="logout" id="m_logout"><i class="fa fa-sign-out fa-fw"></i>Salir</a>
                        </li>
                     </ul>
                 </div>

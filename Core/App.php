@@ -67,12 +67,7 @@ class App
         		exit;
         		
         	}
-            //include APPPATH . "/views/errors/404.php";
-           /* print_r($url);
-            print_r(__DIR__);
-            print_r(__FILE__);*/
-        	//echo sizeof($url) ;
-           // exit;
+        
         }
 
         //obtenemos la clase con su espacio de nombres
